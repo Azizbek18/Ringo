@@ -1,0 +1,115 @@
+.sidebar .container{
+    position: relative;
+    padding: 40px 0px;
+}
+.sidebar__title{
+    padding: 40px 0px 60px;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sidebar__item{
+    display: flex;
+    gap: 540px;
+}
+.sidebar__item:nth-child(1){
+    padding: 40px 0px 0px;
+    border-top: 2px solid rgb(187, 186, 186);
+}
+.sidebar__item:nth-child(2){
+    padding: 40px 0px 0px;
+    border-top: 2px solid rgb(187, 186, 186);
+}
+.sidebar__item:nth-child(3){
+    padding: 40px 0px 0px;
+    border-top: 2px solid rgb(187, 186, 186);
+    
+}
+.sidebar__item:nth-child(4){
+    padding: 40px 0px 0px;
+    border-top: 2px solid rgb(187, 186, 186);
+}
+.sidebar__item:nth-child(5){
+    padding: 40px 0px 0px;
+    border-top: 2px solid rgb(187, 186, 186);
+    border-bottom: 2px solid rgb(187, 186, 186);
+}
+.sidebar__subtitle{
+    padding: 0px 40px 0px;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.sidebar__subtext{
+    padding: 0px 40px 40px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    opacity: 60%;
+}
+.sidebar__blok{
+    border-left: 2px solid rgb(187, 186, 186);
+}
+.sidebar__text{
+    color: #282B22;
+    opacity: 30%;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.sidebar__subtitle:hover{
+    color: #AE7B3C;
+}
+.sidebar__text:hover{
+    color: #AE7B3C;
+    opacity: 100%;
+}
+.sidebar__image{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+}
+@media(max-width:1140px){
+    .sidebar .container{
+        max-width: 1000px;
+    }
+    .sidebar__image{
+        left: 70px;
+        top: 480px;
+    }
+    .sidebar__item{
+        gap: 480px;
+    }
+}
+@media(max-width:1000px){
+    .sidebar .container{
+        max-width: 640px;
+    }
+    .sidebar__image{
+        display: none;
+    }
+    .sidebar__item{
+        gap: 300px;
+    }
+}
+@media(max-width:640px){
+    .sidebar .container{
+        max-width: 320px;
+    }
+    .sidebar__item{
+        gap: 10px;
+    }
+    .sidebar__blok{
+        border: none;
+    }
+}

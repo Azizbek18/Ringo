@@ -1,0 +1,123 @@
+.wrap{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url("../image/usta.png") no-repeat center/cover;
+}
+.wrap .container{
+    
+    padding: 40px 0px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.wrap__title{   
+    padding: 20px 0px;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.wrap__text{
+    color: #fff;
+    width: 550px;
+    padding: 20px 0px 40px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.wrap__link{
+    margin-bottom: 30px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: #AE7B3C;
+    box-shadow: 0px 20px 25px 0px #0000000D;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    text-align: center;
+    border: 2px solid #AE7B3C;
+}
+.wrap__link:hover{
+    color:#fff; 
+    background-color: #766e4d;
+    border: 2px solid #AE7B3C;
+}
+.wrap__box{
+    margin-top: 40px;
+    border-top: 1px solid rgb(198, 196, 196);
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap__rigth{
+    display: flex;
+    gap: 20px;
+}
+.wrap__left{
+    .wrap__icon{
+        margin-right:10px ;
+    }
+}
+.wrap__subtext{
+    padding: 5px 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+@media(max-width:1140px){
+    .wrap .container{
+        max-width: 1000px;
+    }
+}
+@media(max-width:1000px){
+    .wrap .container{
+        max-width: 640px;
+    }
+}
+@media(max-width:640px){
+    .wrap .container{
+        max-width: 320px;
+    } 
+    .wrap__title{
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .wrap__text{
+        padding: 20px 130px;
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .wrap__left{
+        display: none;
+    }
+    .wrap__box{
+        display: flex;
+        justify-content: center;
+    }
+}

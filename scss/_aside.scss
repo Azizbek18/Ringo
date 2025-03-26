@@ -1,0 +1,108 @@
+.aside{
+    position: relative;
+}
+.aside .container{
+    padding: 40px 0px;
+}
+.aside__title{
+    padding: 50px 0px 60px;
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.aside__list{
+    display: flex;
+}
+.aside__item{
+    gap: 20px;
+    padding: 40px 120px;   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.aside__item:nth-child(1){
+    border-bottom: 2px solid rgb(166,164, 164) ;
+    border-top: 2px solid rgb(166, 164, 164);
+    border-right:2px solid rgb(166, 164, 164) ;
+}
+.aside__item:nth-child(2){
+    border-top:2px solid rgb(166,164, 164);
+    border-bottom: 2px solid rgb(166,164, 164);
+}
+.aside__image{
+    top: 60px;
+    left: 0px;
+    position: absolute;
+}
+.aside__images{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}
+@media(max-width:1140px){
+    .aside .container{
+        max-width: 1000px;
+    }
+    .aside__image{
+        display: none;
+    }
+    .aside__images{
+        display: none;
+    }
+}
+@media (max-width:1000px) {
+    .aside .container{
+        max-width: 640px;
+    }
+    .aside__title{
+        padding: 20px 10px;
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .aside__item{
+        padding: 20px 5px;
+    }
+    .aside__text{
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        letter-spacing: 0%;
+    }
+    .aside__list{
+        padding: 10px;
+    }
+}
+@media(max-width:640px){
+    .aside .container{
+        max-width: 320px;
+    }
+    .aside__title{
+        padding: 20px 10px;
+        font-family: Raleway;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .aside__list{
+        flex-direction: column;
+    }
+    .aside__item:nth-child(1){
+        border-bottom: 2px solid rgb(166,164, 164) ;
+        border-top: 2px solid rgb(166, 164, 164);
+        border-right: none;
+    }
+    .aside__item:nth-child(2){
+        border-top: none;
+        border-bottom: 2px solid rgb(166,164, 164);
+    }
+}
